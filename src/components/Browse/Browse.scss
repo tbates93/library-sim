@@ -1,0 +1,42 @@
+@import "../../../_color.scss";
+
+.browseContainer {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background-color: $m;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryContainer {
+    margin-top: 60px;
+    width: 80%;
+    height: 80%;
+    background-color: $b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    .browseTitle {
+        font-family: 'Alegreya', serif;
+        font-size: 1.5em;
+        font-weight: 900;
+        color: $m;
+        margin-left: 30px;
+    }
+    .filter {
+        display: flex;
+        flex-direction: column;
+    }
+}

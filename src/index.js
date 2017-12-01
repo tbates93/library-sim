@@ -3,6 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import store from "./store"
+import { Provider } from "react-redux"
+import { BrowserRouter as Router} from "react-router-dom"
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Provider store={store}>
+        <Router
+        basename={'/'}
+        forceRefresh={false}
+        >
+            <App />
+        </Router>
+    </Provider>
+
+
+    , document.getElementById('root'));
 registerServiceWorker();

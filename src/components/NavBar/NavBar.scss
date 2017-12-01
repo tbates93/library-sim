@@ -1,0 +1,41 @@
+@import "../../../_color.scss";
+
+header {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    background-color: $bl;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.links {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    .link {
+        font-family: 'Alegreya', serif;
+        font-size: 1.5em;
+        font-weight: 900;
+        color: $b;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+}
+
+.logoT {
+    height: 45px;
+    margin-left: 5px;
+}
+
+.logout {
+    background-color: $bl;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    color: $b;
+    border: none;
+    margin-right: 25px;
+}   
