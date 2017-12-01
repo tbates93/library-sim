@@ -1,0 +1,16 @@
+.button {
+  font-family: 'Alegreya', serif;
+  font-size: 1.75em;
+  font-weight: 900;
+  color: #C6B38E;
+  background-color: #A52422;
+  padding: 5px 20px;
+  transition: .62s;
+  cursor: pointer;
+  width: auto;
+  outline: none;
+  border: none; }
+
+.button:hover {
+  background-color: #C6B38E;
+  color: #A52422; }
