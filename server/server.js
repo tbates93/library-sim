@@ -7,6 +7,7 @@ const passport = require("passport");
 const Auth0Strategy = require('passport-auth0');
 
 const users_controller = require("./controllers/users_controller")
+const books_controller = require("./controllers/books_controller")
 
 const app = express();
 
@@ -72,7 +73,7 @@ app.get('/auth/me', (req,res) => {
 })
 
 app.get('/auth/logout', (req,res)=> {
-    req.logOut("https://tbates.auth0.com/v2/logout");
+    req.logOut();
     res.redirect(302,process.env.LOGOUT_REDIRECT)
 })
 
@@ -95,6 +96,8 @@ passport.deserializeUser(function (id, done) {
 
 app.get('/api/users/setuser/:user_id', users_controller.setUserOnRedux)
 
+app.get('/api/books/getall', books_controller.getBooks)
+app.post('/api/books/insert', books_controller.insertBook)
 
 
 const PORT = 3005

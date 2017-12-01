@@ -2,7 +2,6 @@
 
 .browseContainer {
     height: 100vh;
-    position: absolute;
     top: 0;
     width: 100vw;
     background-color: $m;
@@ -10,16 +9,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .inventoryContainer {
     margin-top: 60px;
     width: 80%;
-    height: 80%;
+    height: 100vh;
     background-color: $b;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.booksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $b;
+    overflow-y: scroll;
+    width: 100%;
+    height: auto;
 }
 
 .titleOptions {
@@ -28,6 +39,8 @@
     align-items: center;
     height: 80px;
     width: 100%;
+    overflow-y: scroll;
+    
     .browseTitle {
         font-family: 'Alegreya', serif;
         font-size: 1.5em;
@@ -38,5 +51,6 @@
     .filter {
         display: flex;
         flex-direction: column;
+        font-family: "Open Sans", sans-serif;
     }
 }

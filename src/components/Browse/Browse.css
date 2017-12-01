@@ -1,6 +1,5 @@
 .browseContainer {
   height: 100vh;
-  position: absolute;
   top: 0;
   width: 100vw;
   background-color: #4E1E29;
@@ -12,18 +11,29 @@
 .inventoryContainer {
   margin-top: 60px;
   width: 80%;
-  height: 80%;
+  height: 100vh;
   background-color: #C6B38E;
   border-radius: 10px;
   display: flex;
   flex-direction: column; }
+
+.booksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #C6B38E;
+  overflow-y: scroll;
+  width: 100%;
+  height: auto; }
 
 .titleOptions {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  width: 100%; }
+  width: 100%;
+  overflow-y: scroll; }
   .titleOptions .browseTitle {
     font-family: 'Alegreya', serif;
     font-size: 1.5em;
@@ -32,4 +42,5 @@
     margin-left: 30px; }
   .titleOptions .filter {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif; }

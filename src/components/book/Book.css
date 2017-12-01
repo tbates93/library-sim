@@ -1,0 +1,30 @@
+.containerBook {
+  width: 80%;
+  height: 150px;
+  display: flex;
+  background-color: #FBFFE6;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px; }
+
+.bookImage {
+  height: 135px;
+  margin-left: 15px; }
+
+.titleAuth {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  text-align: left; }
+
+.title {
+  font-size: 2.5em; }
+
+.sideInfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: flex-end; }
