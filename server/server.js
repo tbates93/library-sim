@@ -99,6 +99,8 @@ app.get('/api/users/setuser/:user_id', users_controller.setUserOnRedux)
 app.get('/api/books/getall', books_controller.getBooks)
 app.post('/api/books/insert', books_controller.insertBook)
 
+app.put('/api/books/update/:book_id', books_controller.updateBook)
+app.delete('/api/books/delete/:book_id', books_controller.deleteBook)
 
 const PORT = 3005
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`))

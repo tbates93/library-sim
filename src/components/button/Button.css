@@ -14,3 +14,17 @@
 .button:hover {
   background-color: #C6B38E;
   color: #A52422; }
+
+h1 {
+  float: right; }
+
+h1:nth-child(1) {
+  float: right;
+  color: blue; }
+
+input[type="text"]:disabled {
+  background-color: red;
+  cursor: not-allowed; }
+
+input:focus {
+  background-color: purple; }

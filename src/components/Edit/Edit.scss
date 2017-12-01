@@ -1,0 +1,113 @@
+@import "../../../_color.scss";
+
+.addContainer {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background-color: $m;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryContainer {
+    margin-top: 60px;
+    width: 80%;
+    height: 80%;
+    background-color: $b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    .addTitle {
+        font-family: 'Alegreya', serif;
+        font-size: 2em;
+        font-weight: 700;
+        color: $m;
+        margin-left: 30px;
+        font-style: italic;
+
+    }
+   
+}
+
+.bookContainer {
+    width: 80%;
+    height: 80%;
+    background-color: $g;
+    border-radius: 10px;
+    display: flex;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px;
+        text-align: left;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px;
+        text-align: right;
+    }
+}
+
+input {
+    background-color: $y;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+textarea {
+    background-color: $y;
+    width: 230px;
+    height: 230px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+select {
+    width: 238px;
+    height: 30px;
+    background-color: $y;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+
+
+}
+.image {
+    height: 80%;
+    margin-top: 10px;
+    
+}
+
+.descriptions {
+    color: $y;
+    margin-top: 10px;
+    font-size: 1em;
+    margin-right: 15px;
+}
+
+.flex {
+    display: flex;
+
+}
+.flexR {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}

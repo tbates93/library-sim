@@ -6,7 +6,7 @@ import axios from "axios"
 import { Link } from "react-router-dom"
 
 import NavBar from "../NavBar/NavBar"
-import { Button } from "../button/Button"
+import { Button, Hi } from "../button/Button"
 
 import Book from "../book/Book"
 
@@ -32,6 +32,7 @@ class Browse extends Component {
 
         return (
             <div>
+                <Hi/>
                 
                 <NavBar />
 
@@ -52,7 +53,7 @@ class Browse extends Component {
                             {this.state.books.length !== 0 ? this.state.books.map((book, index) => {
                                 return (
                                     <Book 
-                                        bookId={book.id}
+                                        bookId={book.book_id}
                                         title={book.title}
                                         author={book.author}
                                         image={book.image}

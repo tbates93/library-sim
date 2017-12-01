@@ -1,8 +1,14 @@
 import React, { Component } from "react"
 import "./Book.css"
 import { Button } from "../button/Button"
+import {connect} from "react-redux"
 
-export default class Book extends Component {
+import {setBook} from "../../ducks/reducer"
+
+import {Link} from "react-router-dom"
+
+class Book extends Component {
+
     constructor(props) {
         super(props)
         this.state = {
@@ -15,6 +21,11 @@ export default class Book extends Component {
             description: "Book 3 in The Stormlight Archives"
         }
     }
+
+    componentDidMount(){
+        console.log(this.props)
+    }
+
     render() {
         return (
             <div className="containerBook">
@@ -27,10 +38,18 @@ export default class Book extends Component {
                     <div><span>In Stock: </span><span>{this.props.in_stock ? "Yes" : "No"}</span></div>
                     {this.props.remove ? <Button title="-Remove From Cart" /> : null}
 
-                    <Button title="Details" />
+                    <Link to="/details"><a onClick={() => this.props.setBook(this.props)}><Button title="Details" /></a></Link>
                 </div>
 
             </div>
         )
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        user: state.user,
+        book: state.book
+    }
+}
+export default connect(mapStateToProps, {setBook})(Book);

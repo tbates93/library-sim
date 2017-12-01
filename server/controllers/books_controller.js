@@ -17,4 +17,26 @@ module.exports = {
         })
     },
 
+    updateBook: (req, res, next) => {
+        console.log(req.params,req.body)
+        const db = req.app.get('db')
+      
+        const {book_id} = req.params
+        const {image, title, author, genre, description} = req.body
+
+        db.books_update([title, author, image, genre, description, book_id]).then(response => {
+            res.status(200).send(response)
+        })
+    },
+    deleteBook: (req, res, next) => {
+        console.log(req.params,req.body)
+        const db = req.app.get('db')
+      
+        const {book_id} = req.params
+
+        db.books_delete([book_id]).then(response => {
+            res.status(200).send(response)
+        })
+    },
+
 }

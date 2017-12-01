@@ -18,3 +18,19 @@
     background-color: $b;
     color: $r;
 }
+
+h1 {
+    float: right;
+}
+h1:nth-child(1) {
+    float: right;
+    color: blue;
+}
+
+input[ type="text"]:disabled {
+    background-color: red;
+    cursor: not-allowed;
+}
+input:focus {
+    background-color: purple
+}
