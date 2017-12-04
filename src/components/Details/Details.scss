@@ -1,6 +1,6 @@
 @import "../../../_color.scss";
 
-.browseContainer {
+.detailsContainer {
     height: 100vh;
     top: 0;
     width: 100vw;
@@ -9,13 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    float: right;
+    
 }
 
 .inventoryContainer {
     margin-top: 60px;
     width: 80%;
-    height: 100vh;
+    height: 70%;
     background-color: $b;
     border-radius: 10px;
     display: flex;
@@ -41,7 +41,7 @@
     width: 100%;
     overflow-y: scroll;
     
-    .browseTitle {
+    .detailsTitle {
         font-family: 'Alegreya', serif;
         font-size: 1.5em;
         font-weight: 900;
@@ -54,3 +54,44 @@
         font-family: "Open Sans", sans-serif;
     }
 }
+
+
+
+
+.detailsBook {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    background-color: $y;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.dbookImage {
+    height: 80%;
+    margin-left: 15px;
+}
+
+.dtitleAuth {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.dtitle {
+    font-size: 2.5em;
+
+}
+
+.dsideInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
